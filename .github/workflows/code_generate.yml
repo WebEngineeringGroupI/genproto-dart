@@ -35,8 +35,9 @@ jobs:
       - name: Update proto submodule
         run: make update-submodules
 
-      - name: Generate Go code
-        run: make generate
+      - name: Generate Dart code
+        run: |
+          PATH="$PATH:$HOME/.pub-cache/bin" make generate
 
       - name: Commit and push code
         run: |
