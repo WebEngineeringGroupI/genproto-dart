@@ -56,6 +56,47 @@ class ShortURLsRequest extends $pb.GeneratedMessage {
   void clearUrl() => clearField(1);
 }
 
+class BalanceURLsRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'BalanceURLsRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'webengineering.api.v1alpha1'), createEmptyInstance: create)
+    ..pPS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urls')
+    ..hasRequiredFields = false
+  ;
+
+  BalanceURLsRequest._() : super();
+  factory BalanceURLsRequest({
+    $core.Iterable<$core.String>? urls,
+  }) {
+    final _result = create();
+    if (urls != null) {
+      _result.urls.addAll(urls);
+    }
+    return _result;
+  }
+  factory BalanceURLsRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory BalanceURLsRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  BalanceURLsRequest clone() => BalanceURLsRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  BalanceURLsRequest copyWith(void Function(BalanceURLsRequest) updates) => super.copyWith((message) => updates(message as BalanceURLsRequest)) as BalanceURLsRequest; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static BalanceURLsRequest create() => BalanceURLsRequest._();
+  BalanceURLsRequest createEmptyInstance() => create();
+  static $pb.PbList<BalanceURLsRequest> createRepeated() => $pb.PbList<BalanceURLsRequest>();
+  @$core.pragma('dart2js:noInline')
+  static BalanceURLsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BalanceURLsRequest>(create);
+  static BalanceURLsRequest? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<$core.String> get urls => $_getList(0);
+}
+
 class ShortURLsResponse_Success extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ShortURLsResponse.Success', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'webengineering.api.v1alpha1'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'shortUrl')
@@ -256,5 +297,52 @@ class ShortURLsResponse extends $pb.GeneratedMessage {
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
   ShortURLsResponse_Error ensureError() => $_ensure(1);
+}
+
+class BalanceURLsResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'BalanceURLsResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'webengineering.api.v1alpha1'), createEmptyInstance: create)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'shortUrl')
+    ..hasRequiredFields = false
+  ;
+
+  BalanceURLsResponse._() : super();
+  factory BalanceURLsResponse({
+    $core.String? shortUrl,
+  }) {
+    final _result = create();
+    if (shortUrl != null) {
+      _result.shortUrl = shortUrl;
+    }
+    return _result;
+  }
+  factory BalanceURLsResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory BalanceURLsResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  BalanceURLsResponse clone() => BalanceURLsResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  BalanceURLsResponse copyWith(void Function(BalanceURLsResponse) updates) => super.copyWith((message) => updates(message as BalanceURLsResponse)) as BalanceURLsResponse; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static BalanceURLsResponse create() => BalanceURLsResponse._();
+  BalanceURLsResponse createEmptyInstance() => create();
+  static $pb.PbList<BalanceURLsResponse> createRepeated() => $pb.PbList<BalanceURLsResponse>();
+  @$core.pragma('dart2js:noInline')
+  static BalanceURLsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<BalanceURLsResponse>(create);
+  static BalanceURLsResponse? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get shortUrl => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set shortUrl($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasShortUrl() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearShortUrl() => clearField(1);
 }
 

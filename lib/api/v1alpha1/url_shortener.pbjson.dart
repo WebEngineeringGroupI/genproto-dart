@@ -18,6 +18,16 @@ const ShortURLsRequest$json = const {
 
 /// Descriptor for `ShortURLsRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List shortURLsRequestDescriptor = $convert.base64Decode('ChBTaG9ydFVSTHNSZXF1ZXN0EhAKA3VybBgBIAEoCVIDdXJs');
+@$core.Deprecated('Use balanceURLsRequestDescriptor instead')
+const BalanceURLsRequest$json = const {
+  '1': 'BalanceURLsRequest',
+  '2': const [
+    const {'1': 'urls', '3': 1, '4': 3, '5': 9, '10': 'urls'},
+  ],
+};
+
+/// Descriptor for `BalanceURLsRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List balanceURLsRequestDescriptor = $convert.base64Decode('ChJCYWxhbmNlVVJMc1JlcXVlc3QSEgoEdXJscxgBIAMoCVIEdXJscw==');
 @$core.Deprecated('Use shortURLsResponseDescriptor instead')
 const ShortURLsResponse$json = const {
   '1': 'ShortURLsResponse',
@@ -51,3 +61,13 @@ const ShortURLsResponse_Error$json = const {
 
 /// Descriptor for `ShortURLsResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List shortURLsResponseDescriptor = $convert.base64Decode('ChFTaG9ydFVSTHNSZXNwb25zZRJSCgdzdWNjZXNzGAEgASgLMjYud2ViZW5naW5lZXJpbmcuYXBpLnYxYWxwaGExLlNob3J0VVJMc1Jlc3BvbnNlLlN1Y2Nlc3NIAFIHc3VjY2VzcxJMCgVlcnJvchgCIAEoCzI0LndlYmVuZ2luZWVyaW5nLmFwaS52MWFscGhhMS5TaG9ydFVSTHNSZXNwb25zZS5FcnJvckgAUgVlcnJvchpBCgdTdWNjZXNzEhsKCXNob3J0X3VybBgBIAEoCVIIc2hvcnRVcmwSGQoIbG9uZ191cmwYAiABKAlSB2xvbmdVcmwaLwoFRXJyb3ISEAoDdXJsGAEgASgJUgN1cmwSFAoFZXJyb3IYAiABKAlSBWVycm9yQggKBnJlc3VsdA==');
+@$core.Deprecated('Use balanceURLsResponseDescriptor instead')
+const BalanceURLsResponse$json = const {
+  '1': 'BalanceURLsResponse',
+  '2': const [
+    const {'1': 'short_url', '3': 1, '4': 1, '5': 9, '10': 'shortUrl'},
+  ],
+};
+
+/// Descriptor for `BalanceURLsResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List balanceURLsResponseDescriptor = $convert.base64Decode('ChNCYWxhbmNlVVJMc1Jlc3BvbnNlEhsKCXNob3J0X3VybBgBIAEoCVIIc2hvcnRVcmw=');
