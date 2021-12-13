@@ -56,6 +56,53 @@ class ShortURLsRequest extends $pb.GeneratedMessage {
   void clearUrl() => clearField(1);
 }
 
+class ShortSingleURLRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ShortSingleURLRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'webengineering.api.v1alpha1'), createEmptyInstance: create)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'url')
+    ..hasRequiredFields = false
+  ;
+
+  ShortSingleURLRequest._() : super();
+  factory ShortSingleURLRequest({
+    $core.String? url,
+  }) {
+    final _result = create();
+    if (url != null) {
+      _result.url = url;
+    }
+    return _result;
+  }
+  factory ShortSingleURLRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ShortSingleURLRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ShortSingleURLRequest clone() => ShortSingleURLRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ShortSingleURLRequest copyWith(void Function(ShortSingleURLRequest) updates) => super.copyWith((message) => updates(message as ShortSingleURLRequest)) as ShortSingleURLRequest; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static ShortSingleURLRequest create() => ShortSingleURLRequest._();
+  ShortSingleURLRequest createEmptyInstance() => create();
+  static $pb.PbList<ShortSingleURLRequest> createRepeated() => $pb.PbList<ShortSingleURLRequest>();
+  @$core.pragma('dart2js:noInline')
+  static ShortSingleURLRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShortSingleURLRequest>(create);
+  static ShortSingleURLRequest? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get url => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set url($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasUrl() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearUrl() => clearField(1);
+}
+
 class BalanceURLsRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'BalanceURLsRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'webengineering.api.v1alpha1'), createEmptyInstance: create)
     ..pPS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'urls')
@@ -297,6 +344,67 @@ class ShortURLsResponse extends $pb.GeneratedMessage {
   void clearError() => clearField(2);
   @$pb.TagNumber(2)
   ShortURLsResponse_Error ensureError() => $_ensure(1);
+}
+
+class ShortSingleURLResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ShortSingleURLResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'webengineering.api.v1alpha1'), createEmptyInstance: create)
+    ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'shortUrl')
+    ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'longUrl')
+    ..hasRequiredFields = false
+  ;
+
+  ShortSingleURLResponse._() : super();
+  factory ShortSingleURLResponse({
+    $core.String? shortUrl,
+    $core.String? longUrl,
+  }) {
+    final _result = create();
+    if (shortUrl != null) {
+      _result.shortUrl = shortUrl;
+    }
+    if (longUrl != null) {
+      _result.longUrl = longUrl;
+    }
+    return _result;
+  }
+  factory ShortSingleURLResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ShortSingleURLResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ShortSingleURLResponse clone() => ShortSingleURLResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ShortSingleURLResponse copyWith(void Function(ShortSingleURLResponse) updates) => super.copyWith((message) => updates(message as ShortSingleURLResponse)) as ShortSingleURLResponse; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static ShortSingleURLResponse create() => ShortSingleURLResponse._();
+  ShortSingleURLResponse createEmptyInstance() => create();
+  static $pb.PbList<ShortSingleURLResponse> createRepeated() => $pb.PbList<ShortSingleURLResponse>();
+  @$core.pragma('dart2js:noInline')
+  static ShortSingleURLResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ShortSingleURLResponse>(create);
+  static ShortSingleURLResponse? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.String get shortUrl => $_getSZ(0);
+  @$pb.TagNumber(1)
+  set shortUrl($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasShortUrl() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearShortUrl() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $core.String get longUrl => $_getSZ(1);
+  @$pb.TagNumber(2)
+  set longUrl($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasLongUrl() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearLongUrl() => clearField(2);
 }
 
 class BalanceURLsResponse extends $pb.GeneratedMessage {

@@ -18,6 +18,16 @@ const ShortURLsRequest$json = const {
 
 /// Descriptor for `ShortURLsRequest`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List shortURLsRequestDescriptor = $convert.base64Decode('ChBTaG9ydFVSTHNSZXF1ZXN0EhAKA3VybBgBIAEoCVIDdXJs');
+@$core.Deprecated('Use shortSingleURLRequestDescriptor instead')
+const ShortSingleURLRequest$json = const {
+  '1': 'ShortSingleURLRequest',
+  '2': const [
+    const {'1': 'url', '3': 1, '4': 1, '5': 9, '10': 'url'},
+  ],
+};
+
+/// Descriptor for `ShortSingleURLRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List shortSingleURLRequestDescriptor = $convert.base64Decode('ChVTaG9ydFNpbmdsZVVSTFJlcXVlc3QSEAoDdXJsGAEgASgJUgN1cmw=');
 @$core.Deprecated('Use balanceURLsRequestDescriptor instead')
 const BalanceURLsRequest$json = const {
   '1': 'BalanceURLsRequest',
@@ -61,6 +71,17 @@ const ShortURLsResponse_Error$json = const {
 
 /// Descriptor for `ShortURLsResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List shortURLsResponseDescriptor = $convert.base64Decode('ChFTaG9ydFVSTHNSZXNwb25zZRJSCgdzdWNjZXNzGAEgASgLMjYud2ViZW5naW5lZXJpbmcuYXBpLnYxYWxwaGExLlNob3J0VVJMc1Jlc3BvbnNlLlN1Y2Nlc3NIAFIHc3VjY2VzcxJMCgVlcnJvchgCIAEoCzI0LndlYmVuZ2luZWVyaW5nLmFwaS52MWFscGhhMS5TaG9ydFVSTHNSZXNwb25zZS5FcnJvckgAUgVlcnJvchpBCgdTdWNjZXNzEhsKCXNob3J0X3VybBgBIAEoCVIIc2hvcnRVcmwSGQoIbG9uZ191cmwYAiABKAlSB2xvbmdVcmwaLwoFRXJyb3ISEAoDdXJsGAEgASgJUgN1cmwSFAoFZXJyb3IYAiABKAlSBWVycm9yQggKBnJlc3VsdA==');
+@$core.Deprecated('Use shortSingleURLResponseDescriptor instead')
+const ShortSingleURLResponse$json = const {
+  '1': 'ShortSingleURLResponse',
+  '2': const [
+    const {'1': 'short_url', '3': 1, '4': 1, '5': 9, '10': 'shortUrl'},
+    const {'1': 'long_url', '3': 2, '4': 1, '5': 9, '10': 'longUrl'},
+  ],
+};
+
+/// Descriptor for `ShortSingleURLResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List shortSingleURLResponseDescriptor = $convert.base64Decode('ChZTaG9ydFNpbmdsZVVSTFJlc3BvbnNlEhsKCXNob3J0X3VybBgBIAEoCVIIc2hvcnRVcmwSGQoIbG9uZ191cmwYAiABKAlSB2xvbmdVcmw=');
 @$core.Deprecated('Use balanceURLsResponseDescriptor instead')
 const BalanceURLsResponse$json = const {
   '1': 'BalanceURLsResponse',
